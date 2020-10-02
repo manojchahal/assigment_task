@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.HomeFragment">
+    <ImageView
+        android:id="@+id/top_image"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_120sdp"
+        android:background="@drawable/dash_head_cropped" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_navigation_view">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_18sdp"
+            android:layout_marginEnd="@dimen/_18sdp">
+
+            <TextView
+                android:id="@+id/title_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome to LEARNR"
+                android:textColor="@color/white"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_below="@+id/title_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The app that let's you learn new things in a \n better way"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp" />
+
+            <RelativeLayout
+                android:id="@+id/search_view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_48sdp"
+
+                android:layout_marginTop="@dimen/_97sdp"
+                android:background="@drawable/search_view_drable">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="Looking for...."
+                    android:paddingStart="@dimen/_19sdp"
+                    android:textSize="@dimen/_11sdp" />
+
+                <ImageView
+                    android:layout_width="@dimen/_36sdp"
+                    android:layout_height="@dimen/_36sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_search" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/search_view"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/learn_rnr"
+                        style="@style/home_button_view">
+
+                        <ImageView
+                            style="@style/home_button_image"
+                            android:src="@drawable/rnr" />
+
+                        <TextView
+                            style="@style/home_text_title"
+                            android:text="@string/rnr" />
+
+                        <TextView
+                            style="@style/home_text_"
+                            android:text="@string/start_now" />
+
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/home_button_view">
+
+                        <ImageView
+                            style="@style/home_button_image"
+                            android:src="@drawable/blogs" />
+
+                        <TextView
+                            style="@style/home_text_title"
+                            android:text="@string/b_a" />
+
+                        <TextView
+                            style="@style/home_text_"
+                            android:text="@string/Read_now" />
+
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/home_button_view">
+
+                        <ImageView
+                            style="@style/home_button_image"
+                            android:src="@drawable/ansmnt" />
+
+                        <TextView
+                            style="@style/home_text_title"
+                            android:text="@string/ann" />
+
+                        <TextView
+                            style="@style/home_text_"
+                            android:text="@string/explore" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <LinearLayout style="@style/home_button_view">
+
+                        <ImageView
+                            style="@style/home_button_image"
+                            android:src="@drawable/video" />
+
+                        <TextView
+                            style="@style/home_text_title"
+                            android:text="@string/video" />
+
+                        <TextView
+                            style="@style/home_text_"
+                            android:text="@string/watch_now" />
+
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/home_button_view">
+
+                        <ImageView
+                            style="@style/home_button_image"
+                            android:src="@drawable/news" />
+
+                        <TextView
+                            style="@style/home_text_title"
+                            android:text="@string/months" />
+
+                        <TextView
+                            style="@style/home_text_"
+                            android:text="@string/explore" />
+
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/home_button_view">
+
+                        <ImageView
+                            style="@style/home_button_image"
+                            android:src="@drawable/research" />
+
+                        <TextView
+                            style="@style/home_text_title"
+                            android:text="@string/monthly" />
+
+                        <TextView
+                            style="@style/home_text_"
+                            android:text="@string/explore" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

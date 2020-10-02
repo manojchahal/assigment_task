@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:background="@drawable/backgroud_view">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/image_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_160sdp"
+            android:layout_margin="@dimen/_4sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/c3"
+            app:riv_border_color="@color/white"
+            app:riv_border_width="2dip"
+            app:riv_corner_radius="@dimen/_10sdp"
+            app:riv_mutate_background="true" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_margin="@dimen/_8sdp"
+            android:layout_below="@+id/image_view"
+            android:layout_width="wrap_content"
+            android:lineSpacingExtra="@dimen/_4sdp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/demo_text"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="normal" />
+    </RelativeLayout>
+</RelativeLayout>

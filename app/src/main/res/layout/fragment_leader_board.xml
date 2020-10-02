@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.LeaderBoard_Fragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/leaderboard_bg">
+        <TextView
+            android:id="@+id/title_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Leaderboard"
+            android:textColor="@color/white"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:id="@+id/top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_173sdp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingStart="@dimen/_25sdp"
+                android:paddingBottom="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:orientation="vertical"
+                android:gravity="center_horizontal|bottom">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/second_winner"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/snd_img"
+                    app:riv_border_color="@color/white"
+                    app:riv_border_width="2dip"
+                    app:riv_corner_radius="30dip"
+                    app:riv_mutate_background="true"
+                    app:riv_oval="true" />
+                <TextView
+                    android:text="Abhijit"
+                    style="@style/leaderboard_title"/>
+                <TextView
+                    android:text="1700 Points"
+                    style="@style/leaderboard_title_sub"/>
+            </LinearLayout>
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_marginBottom="@dimen/_25sdp"-->
+<!--                android:layout_marginStart="@dimen/_25sdp"-->
+<!--                android:gravity="center_horizontal|bottom">-->
+
+<!--                <com.makeramen.roundedimageview.RoundedImageView-->
+<!--                    android:id="@+id/second_winner"-->
+<!--                    android:layout_width="@dimen/_50sdp"-->
+<!--                    android:layout_height="@dimen/_50sdp"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:layout_marginTop="@dimen/_30sdp"-->
+<!--                    android:scaleType="fitCenter"-->
+<!--                    android:src="@drawable/snd_img"-->
+<!--                    app:riv_border_color="@color/white"-->
+<!--                    app:riv_border_width="2dip"-->
+<!--                    app:riv_corner_radius="30dip"-->
+<!--                    app:riv_mutate_background="true"-->
+<!--                    app:riv_oval="true" />-->
+<!--                <TextView-->
+<!--                    android:id="@+id/second_user"-->
+<!--                    android:layout_centerHorizontal="true"-->
+<!--                    android:layout_below="@+id/second_winner"-->
+<!--                    android:text="Abhijit"-->
+<!--                    style="@style/leaderboard_title"/>-->
+<!--                <TextView-->
+<!--                    android:layout_below="@+id/second_user"-->
+<!--                    android:layout_centerHorizontal="true"-->
+<!--                    android:text="1600 Points"-->
+<!--                    style="@style/leaderboard_title_sub"/>-->
+<!--            </RelativeLayout>-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_13sdp"
+                android:layout_weight="1">
+
+
+
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/demo3"
+                    app:riv_border_color="@color/white"
+                    app:riv_border_width="2dip"
+                    app:riv_corner_radius="30dip"
+                    app:riv_mutate_background="true"
+                    app:riv_oval="true" />
+                <LinearLayout
+
+                    android:id="@+id/invisible"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/invisible"
+                        android:src="@drawable/icon_crown" />
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:layout_width="@dimen/_50sdp"
+                        android:visibility="invisible"
+                        android:layout_marginBottom="@dimen/_22sdp"
+                        android:layout_height="@dimen/_50sdp"/>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/first_user"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/imageView1"
+                    android:text="Abhijit"
+                    style="@style/leaderboard_title"/>
+                <TextView
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/first_user"
+                    android:text="2000 Points"
+                    style="@style/leaderboard_title_sub"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/_25sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:paddingBottom="@dimen/_8sdp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|bottom"
+                android:orientation="vertical">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/third_winner"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/demo1"
+                    app:riv_border_color="@color/white"
+                    app:riv_border_width="2dip"
+                    app:riv_corner_radius="30dip"
+                    app:riv_mutate_background="true"
+                    app:riv_oval="true" />
+
+                <TextView
+                    style="@style/leaderboard_title"
+                    android:text="Abhijit" />
+
+                <TextView
+                    style="@style/leaderboard_title_sub"
+                    android:text="1600 Points" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:background="@drawable/uppercurved"
+            android:layout_marginTop="@dimen/_45sdp"
+            android:layout_below="@+id/top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/leaderboard_recyerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>

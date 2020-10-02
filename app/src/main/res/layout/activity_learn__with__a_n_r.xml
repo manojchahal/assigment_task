@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.Learn_With_ANR_Activity">
+
+    <ImageView
+        android:id="@+id/top_image"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_120sdp"
+        android:background="@drawable/dash_head_cropped" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp">
+
+            <TextView
+                android:id="@+id/title_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:text="Learn with RNR"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_top"
+                android:text="Learn the basics of investment &amp; how to start \nwith your first investment"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp" />
+
+            <RelativeLayout
+                android:id="@+id/search_view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_48sdp"
+
+                android:layout_marginTop="@dimen/_97sdp"
+                android:background="@drawable/search_view_drable">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="Looking for...."
+                    android:paddingStart="@dimen/_19sdp"
+                    android:textSize="@dimen/_11sdp" />
+
+                <ImageView
+                    android:layout_width="@dimen/_36sdp"
+                    android:layout_height="@dimen/_36sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_search" />
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+               android:id="@+id/learn_recy"
+                android:layout_below="@+id/search_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </RelativeLayout>
+</RelativeLayout>
